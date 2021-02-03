@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainSimulatorComponent } from './main-simulator/main-simulator.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainSimulatorComponent
+    MainSimulatorComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
-  bootstrap: [MainSimulatorComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
